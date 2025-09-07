@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdhrhsnjgb21h"]
+
+[ext_resource type="Script" uid="uid://om5tqmgkf5hr" path="res://control.gd" id="1_5p55f"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_5p55f")
+
+[node name="TimerLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = -110.0
+offset_right = 61.0
+offset_bottom = -87.0

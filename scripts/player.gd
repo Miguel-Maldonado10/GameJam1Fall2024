@@ -40,6 +40,11 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func die():
-	animated_sprite.flip_v
+	hide()
+	#animated_sprite.flip_v
 	print("Player has been killed!")
-	set_process(false)
+	##set_process(false)
+
+
+func _on_kill_zone_body_entered(body: Node2D) -> void:
+	die() # Replace with function body.
