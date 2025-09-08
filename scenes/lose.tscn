@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ccsjr7vsoyxj6"]
 
 [ext_resource type="Script" uid="uid://bwwtdorniex7x" path="res://scripts/playagain.gd" id="1_vjdtf"]
-[ext_resource type="Texture2D" uid="uid://dymjjfr0ce064" path="res://assets/lose.png" id="2_r6nsb"]
+[ext_resource type="Texture2D" uid="uid://dymjjfr0ce064" path="res://assets/Original Art/lose.png" id="2_r6nsb"]
 
 [node name="Losescreen" type="Node"]
 script = ExtResource("1_vjdtf")

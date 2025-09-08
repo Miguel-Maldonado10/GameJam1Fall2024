@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://67qiyja1gjdl"]
 
 [ext_resource type="Script" uid="uid://bwwtdorniex7x" path="res://scripts/playagain.gd" id="1_r4oei"]
-[ext_resource type="Texture2D" uid="uid://dolbw6wbae6pd" path="res://assets/win.png" id="2_iiocm"]
+[ext_resource type="Texture2D" uid="uid://dolbw6wbae6pd" path="res://assets/Original Art/win.png" id="2_iiocm"]
 [ext_resource type="AudioStream" uid="uid://bexbdoy6o7ctj" path="res://assets/music/rapid-drum-and-bass-full-369486.mp3" id="3_yxbqr"]
 
 [node name="Winscreen" type="Node"]
