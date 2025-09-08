@@ -22,6 +22,8 @@ func _process(delta):
 	# We continuously add the 'delta' time to our time_elapsed variable.
 	if time_left > 0:
 		time_left -= delta
+	else: 
+		get_tree().reload_current_scene()
 	
 	# We update the text of our Label node every frame.
 	if has_node("TimerLabel"):

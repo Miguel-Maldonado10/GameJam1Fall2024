@@ -1,7 +1,8 @@
 # This script should be attached to an Area2D node that represents your lava.
 extends Area2D
 @onready var player: CharacterBody2D = $"../Player"
-# This function is automatically called when a body (e.g., your player)
+@onready var control: Control = $"../Player/Control"
+ # This function is automatically called when a body (e.g., your player)
 # enters any of the Area2D's collision shapes.
 func _on_body_entered(body):
 	# We check if the entering body belongs to the "player" group.
@@ -10,6 +11,7 @@ func _on_body_entered(body):
 		# If it's the player, we'll handle their "death" or "game over" state.
 		# You should replace the following line with the actual code
 		# that handles your game's logic for a player dying.
+	print("You died!")
 	handle_player_death(body)
 
 # This is a placeholder function to handle what happens when the player "dies."
