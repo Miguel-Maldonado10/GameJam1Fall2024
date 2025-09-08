@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="heat"
-run/main_scene="uid://ctlhfgfj0vfy8"
+run/main_scene="uid://3qes054iv8oe"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -3,7 +3,7 @@
 # The `_ready` function is called when the node and all its children have entered the scene tree.
 # We will use this function to get our child nodes.
 extends Control
-
+const LOSE = preload("res://scenes/lose.tscn")
 # The time variable will store the time elapsed in seconds.
 var time_left: float = 60.0
 
@@ -23,7 +23,7 @@ func _process(delta):
 	if time_left > 0:
 		time_left -= delta
 	else: 
-		get_tree().reload_current_scene()
+		get_tree().change_scene_to_packed(LOSE)
 	
 	# We update the text of our Label node every frame.
 	if has_node("TimerLabel"):

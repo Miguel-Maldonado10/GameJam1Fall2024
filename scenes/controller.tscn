@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bos5q8xevv8cs"]
+
+[ext_resource type="Script" uid="uid://vccocdd3os2h" path="res://scripts/controller.gd" id="1_60fnl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e06ql"]
+font_size = 64
+
+[node name="Controller" type="Node"]
+script = ExtResource("1_60fnl")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1159.0
+offset_bottom = 653.0
+color = Color(0.588235, 0, 0.101961, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 65.0
+offset_top = 107.0
+offset_right = 1088.0
+offset_bottom = 441.0
+text = "Jump - Spacebar
+Move Right - D & Right Arrow Key
+Move Left - A & Left Arrow Key"
+label_settings = SubResource("LabelSettings_e06ql")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 544.0
+offset_top = 452.0
+offset_right = 648.0
+offset_bottom = 496.0
+text = "Menu
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

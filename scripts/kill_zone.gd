@@ -1,10 +1,7 @@
 extends Area2D
-
-@onready var timer: Timer = $Timer
-
+const LOSE = preload("res://scenes/lose.tscn")
 func _on_body_entered(body: Node2D) -> void:
 	print("You died!")	# Replace with function body.
-	timer.start()
 
 #func _on_timer_timeout() -> void:
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_packed(LOSE)
